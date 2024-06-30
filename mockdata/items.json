@@ -1,0 +1,208 @@
+{
+  "food_items": [
+    {
+      "name": "Margherita Pizza",
+      "image": "url_to_image",
+      "description": "Classic pizza with tomato, mozzarella, and basil.",
+      "price": 8.99,
+      "tax": 0.5,
+      "customize_options": [
+        { "name": "Extra cheese", "price": 1.0 },
+        { "name": "Gluten-free crust", "price": 1.5 }
+      ],
+      "category": "Pizza"
+    },
+    {
+      "name": "Pepperoni Pizza",
+      "image": "url_to_image",
+      "description": "Pepperoni and mozzarella on a classic crust.",
+      "price": 9.99,
+      "tax": 0.6,
+      "customize_options": [
+        { "name": "Extra pepperoni", "price": 1.5 },
+        { "name": "Stuffed crust", "price": 2.0 }
+      ],
+      "category": "Pizza"
+    },
+    {
+      "name": "Caesar Salad",
+      "image": "url_to_image",
+      "description": "Romaine lettuce, croutons, and Caesar dressing.",
+      "price": 7.49,
+      "tax": 0.4,
+      "customize_options": [
+        { "name": "Add chicken", "price": 2.0 },
+        { "name": "No croutons", "price": 0.0 }
+      ],
+      "category": "Salad"
+    },
+    {
+      "name": "Grilled Chicken Sandwich",
+      "image": "url_to_image",
+      "description": "Grilled chicken breast with lettuce and tomato.",
+      "price": 6.99,
+      "tax": 0.35,
+      "customize_options": [
+        { "name": "Add bacon", "price": 1.5 },
+        { "name": "Whole wheat bun", "price": 0.5 }
+      ],
+      "category": "Sandwich"
+    },
+    {
+      "name": "Cheeseburger",
+      "image": "url_to_image",
+      "description": "Beef patty with cheddar cheese, lettuce, and tomato.",
+      "price": 8.49,
+      "tax": 0.45,
+      "customize_options": [
+        { "name": "Add bacon", "price": 1.5 },
+        { "name": "Extra cheese", "price": 1.0 }
+      ],
+      "category": "Burger"
+    },
+    {
+      "name": "Vegan Burger",
+      "image": "url_to_image",
+      "description": "Plant-based patty with avocado and lettuce.",
+      "price": 9.49,
+      "tax": 0.5,
+      "customize_options": [
+        { "name": "Gluten-free bun", "price": 1.5 },
+        { "name": "Add jalapeños", "price": 0.5 }
+      ],
+      "category": "Burger"
+    },
+    {
+      "name": "Spaghetti Bolognese",
+      "image": "url_to_image",
+      "description": "Spaghetti with meat sauce.",
+      "price": 10.99,
+      "tax": 0.65,
+      "customize_options": [
+        { "name": "Add Parmesan", "price": 1.0 },
+        { "name": "Whole grain pasta", "price": 1.5 }
+      ],
+      "category": "Pasta"
+    },
+    {
+      "name": "Fettuccine Alfredo",
+      "image": "url_to_image",
+      "description": "Fettuccine pasta with creamy Alfredo sauce.",
+      "price": 11.49,
+      "tax": 0.7,
+      "customize_options": [
+        { "name": "Add chicken", "price": 2.0 },
+        { "name": "Add mushrooms", "price": 1.5 }
+      ],
+      "category": "Pasta"
+    },
+    {
+      "name": "Chicken Tikka Masala",
+      "image": "url_to_image",
+      "description": "Grilled chicken in a spiced tomato sauce.",
+      "price": 12.99,
+      "tax": 0.75,
+      "customize_options": [
+        { "name": "Extra spicy", "price": 0.5 },
+        { "name": "Add naan", "price": 1.5 }
+      ],
+      "category": "Indian"
+    },
+    {
+      "name": "Vegetable Curry",
+      "image": "url_to_image",
+      "description": "Mixed vegetables in a spicy curry sauce.",
+      "price": 9.99,
+      "tax": 0.5,
+      "customize_options": [
+        { "name": "Add tofu", "price": 1.5 },
+        { "name": "Mild spice", "price": 0.0 }
+      ],
+      "category": "Indian"
+    },
+    {
+      "name": "Sushi Platter",
+      "image": "url_to_image",
+      "description": "Assorted sushi rolls with soy sauce and wasabi.",
+      "price": 15.99,
+      "tax": 0.9,
+      "customize_options": [
+        { "name": "Extra wasabi", "price": 0.5 },
+        { "name": "Brown rice", "price": 1.0 }
+      ],
+      "category": "Japanese"
+    },
+    {
+      "name": "Miso Soup",
+      "image": "url_to_image",
+      "description": "Traditional Japanese soup with tofu and seaweed.",
+      "price": 4.99,
+      "tax": 0.25,
+      "customize_options": [
+        { "name": "Add mushrooms", "price": 1.0 },
+        { "name": "No tofu", "price": 0.0 }
+      ],
+      "category": "Japanese"
+    },
+    {
+      "name": "Tacos",
+      "image": "url_to_image",
+      "description": "Three tacos with your choice of filling.",
+      "price": 7.99,
+      "tax": 0.4,
+      "customize_options": [
+        { "name": "Extra cheese", "price": 1.0 },
+        { "name": "Guacamole", "price": 1.5 }
+      ],
+      "category": "Mexican"
+    },
+    {
+      "name": "Burrito Bowl",
+      "image": "url_to_image",
+      "description": "Bowl with rice, beans, and your choice of protein.",
+      "price": 8.99,
+      "tax": 0.5,
+      "customize_options": [
+        { "name": "Add sour cream", "price": 0.5 },
+        { "name": "Extra guacamole", "price": 1.5 }
+      ],
+      "category": "Mexican"
+    },
+    {
+      "name": "Pad Thai",
+      "image": "url_to_image",
+      "description": "Thai stir-fried noodles with vegetables and peanuts.",
+      "price": 10.49,
+      "tax": 0.55,
+      "customize_options": [
+        { "name": "Add chicken", "price": 2.0 },
+        { "name": "Extra peanuts", "price": 0.5 }
+      ],
+      "category": "Thai"
+    },
+    {
+      "name": "Green Curry",
+      "image": "url_to_image",
+      "description": "Spicy green curry with coconut milk and vegetables.",
+      "price": 11.49,
+      "tax": 0.6,
+      "customize_options": [
+        { "name": "Add shrimp", "price": 2.5 },
+        { "name": "Mild spice", "price": 0.0 }
+      ],
+      "category": "Thai"
+    },
+    {
+      "name": "Cheese Quesadilla",
+      "image": "url_to_image",
+      "description": "Grilled tortilla with melted cheese.",
+      "price": 6.99,
+      "tax": 0.35,
+      "customize_options": [
+        { "name": "Add chicken", "price": 1.5 },
+        { "name": "Extra cheese", "price": 1.0 }
+      ],
+      "category": "Mexican"
+    }
+  ]
+}
