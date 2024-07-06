@@ -1,0 +1,2543 @@
+{
+  "menuItems": [
+    {
+      "id": 1,
+      "name": "Margherita Pizza",
+      "category": "Pizza",
+      "description": "Classic Margherita pizza with fresh tomatoes, mozzarella, and basil.",
+      "price": 10.99,
+      "customizeOptions": {
+        "size": {
+          "multipleChoice": false,
+          "options": ["Small", "Medium", "Large"]
+        },
+        "extraToppings": {
+          "multipleChoice": true,
+          "options": ["Olives", "Mushrooms", "Pepperoni"]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Caesar Salad",
+      "category": "Salad",
+      "description": "Crisp romaine lettuce with Caesar dressing, croutons, and parmesan cheese.",
+      "price": 7.99,
+      "customizeOptions": {
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Chicken", "Shrimp", "Tofu"]
+        },
+        "dressing": {
+          "multipleChoice": false,
+          "options": ["Caesar", "Ranch", "Italian"]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Spaghetti Bolognese",
+      "category": "Pasta",
+      "description": "Traditional spaghetti with rich Bolognese sauce and parmesan cheese.",
+      "price": 12.99,
+      "customizeOptions": {
+        "pastaType": {
+          "multipleChoice": false,
+          "options": ["Spaghetti", "Fettuccine", "Penne"]
+        },
+        "extraCheese": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Grilled Chicken Sandwich",
+      "category": "Sandwich",
+      "description": "Grilled chicken breast with lettuce, tomato, and mayo on a toasted bun.",
+      "price": 9.99,
+      "customizeOptions": {
+        "breadType": {
+          "multipleChoice": false,
+          "options": ["Whole Wheat", "White", "Gluten-Free"]
+        },
+        "side": {
+          "multipleChoice": false,
+          "options": ["Fries", "Salad", "Coleslaw"]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Chocolate Lava Cake",
+      "category": "Dessert",
+      "description": "Warm chocolate cake with a gooey molten center, served with vanilla ice cream.",
+      "price": 6.99,
+      "customizeOptions": {
+        "iceCreamFlavor": {
+          "multipleChoice": false,
+          "options": ["Vanilla", "Chocolate", "Strawberry"]
+        },
+        "addToppings": {
+          "multipleChoice": true,
+          "options": ["Whipped Cream", "Sprinkles", "Cherries"]
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "BBQ Chicken Pizza",
+      "category": "Pizza",
+      "description": "Pizza topped with BBQ sauce, grilled chicken, red onions, and cilantro.",
+      "price": 11.99,
+      "customizeOptions": {
+        "size": {
+          "multipleChoice": false,
+          "options": ["Small", "Medium", "Large"]
+        },
+        "extraToppings": {
+          "multipleChoice": true,
+          "options": ["Bacon", "Pineapple", "Jalapenos"]
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "Greek Salad",
+      "category": "Salad",
+      "description": "Salad with mixed greens, feta cheese, olives, cucumbers, and red onions.",
+      "price": 8.99,
+      "customizeOptions": {
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Chicken", "Lamb", "Falafel"]
+        },
+        "dressing": {
+          "multipleChoice": false,
+          "options": ["Greek", "Balsamic", "Lemon Vinaigrette"]
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "Lasagna",
+      "category": "Pasta",
+      "description": "Layers of pasta with rich meat sauce, ricotta, and mozzarella cheese.",
+      "price": 13.99,
+      "customizeOptions": {
+        "extraCheese": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addVegetables": {
+          "multipleChoice": true,
+          "options": ["Spinach", "Mushrooms", "Zucchini"]
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "Turkey Club Sandwich",
+      "category": "Sandwich",
+      "description": "Classic club sandwich with turkey, bacon, lettuce, tomato, and mayo.",
+      "price": 9.99,
+      "customizeOptions": {
+        "breadType": {
+          "multipleChoice": false,
+          "options": ["Whole Wheat", "White", "Sourdough"]
+        },
+        "side": {
+          "multipleChoice": false,
+          "options": ["Chips", "Salad", "Fruit"]
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "Blueberry Cheesecake",
+      "category": "Dessert",
+      "description": "Creamy cheesecake topped with fresh blueberries and blueberry sauce.",
+      "price": 7.99,
+      "customizeOptions": {
+        "addToppings": {
+          "multipleChoice": true,
+          "options": ["Whipped Cream", "Chocolate Drizzle", "Mint Leaves"]
+        },
+        "servingStyle": {
+          "multipleChoice": false,
+          "options": ["Chilled", "Room Temperature"]
+        }
+      }
+    },
+    {
+      "id": 11,
+      "name": "Pepperoni Pizza",
+      "category": "Pizza",
+      "description": "Classic pizza with pepperoni slices and mozzarella cheese.",
+      "price": 10.99,
+      "customizeOptions": {
+        "size": {
+          "multipleChoice": false,
+          "options": ["Small", "Medium", "Large"]
+        },
+        "extraToppings": {
+          "multipleChoice": true,
+          "options": ["Extra Cheese", "Mushrooms", "Bell Peppers"]
+        }
+      }
+    },
+    {
+      "id": 12,
+      "name": "Caprese Salad",
+      "category": "Salad",
+      "description": "Fresh tomatoes, mozzarella, and basil drizzled with balsamic reduction.",
+      "price": 8.49,
+      "customizeOptions": {
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Chicken", "Prosciutto"]
+        },
+        "dressing": {
+          "multipleChoice": false,
+          "options": ["Balsamic", "Olive Oil"]
+        }
+      }
+    },
+    {
+      "id": 13,
+      "name": "Fettuccine Alfredo",
+      "category": "Pasta",
+      "description": "Creamy Alfredo sauce over fettuccine pasta with parmesan cheese.",
+      "price": 12.99,
+      "customizeOptions": {
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Chicken", "Shrimp", "Broccoli"]
+        },
+        "extraCheese": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 14,
+      "name": "Philly Cheesesteak",
+      "category": "Sandwich",
+      "description": "Thinly sliced beef with onions, peppers, and melted cheese on a hoagie roll.",
+      "price": 10.99,
+      "customizeOptions": {
+        "cheeseType": {
+          "multipleChoice": false,
+          "options": ["Provolone", "Cheddar", "American"]
+        },
+        "side": {
+          "multipleChoice": false,
+          "options": ["Fries", "Salad", "Onion Rings"]
+        }
+      }
+    },
+    {
+      "id": 15,
+      "name": "Tiramisu",
+      "category": "Dessert",
+      "description": "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
+      "price": 6.99,
+      "customizeOptions": {
+        "extraCocoa": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addBerries": {
+          "multipleChoice": true,
+          "options": ["Strawberries", "Raspberries", "Blueberries"]
+        }
+      }
+    },
+    {
+      "id": 16,
+      "name": "Hawaiian Pizza",
+      "category": "Pizza",
+      "description": "Pizza topped with ham, pineapple, and mozzarella cheese.",
+      "price": 11.49,
+      "customizeOptions": {
+        "size": {
+          "multipleChoice": false,
+          "options": ["Small", "Medium", "Large"]
+        },
+        "extraToppings": {
+          "multipleChoice": true,
+          "options": ["Bacon", "Jalapenos", "Onions"]
+        }
+      }
+    },
+    {
+      "id": 17,
+      "name": "Cobb Salad",
+      "category": "Salad",
+      "description": "Mixed greens with chicken, bacon, avocado, blue cheese, and eggs.",
+      "price": 9.99,
+      "customizeOptions": {
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Turkey", "Salmon", "Tofu"]
+        },
+        "dressing": {
+          "multipleChoice": false,
+          "options": ["Ranch", "Blue Cheese", "Vinaigrette"]
+        }
+      }
+    },
+    {
+      "id": 18,
+      "name": "Penne Arrabbiata",
+      "category": "Pasta",
+      "description": "Penne pasta in a spicy tomato sauce with garlic and red pepper flakes.",
+      "price": 11.99,
+      "customizeOptions": {
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Chicken", "Sausage", "Shrimp"]
+        },
+        "extraSpicy": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 19,
+      "name": "BLT Sandwich",
+      "category": "Sandwich",
+      "description": "Bacon, lettuce, and tomato sandwich with mayo on toasted bread.",
+      "price": 8.99,
+      "customizeOptions": {
+        "breadType": {
+          "multipleChoice": false,
+          "options": ["Whole Wheat", "White", "Rye"]
+        },
+        "side": {
+          "multipleChoice": false,
+          "options": ["Chips", "Salad", "Soup"]
+        }
+      }
+    },
+    {
+      "id": 20,
+      "name": "Creme Brulee",
+      "category": "Dessert",
+      "description": "Rich custard topped with a layer of caramelized sugar.",
+      "price": 7.49,
+      "customizeOptions": {
+        "extraCaramel": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addFruit": {
+          "multipleChoice": true,
+          "options": ["Raspberries", "Blueberries", "Mint"]
+        }
+      }
+    },
+    {
+      "id": 21,
+      "name": "Meat Lovers Pizza",
+      "category": "Pizza",
+      "description": "Pizza topped with pepperoni, sausage, ham, and bacon.",
+      "price": 12.99,
+      "customizeOptions": {
+        "size": {
+          "multipleChoice": false,
+          "options": ["Small", "Medium", "Large"]
+        },
+        "extraToppings": {
+          "multipleChoice": true,
+          "options": ["Extra Cheese", "Mushrooms", "Green Peppers"]
+        }
+      }
+    },
+    {
+      "id": 22,
+      "name": "Spinach and Strawberry Salad",
+      "category": "Salad",
+      "description": "Fresh spinach with strawberries, almonds, and feta cheese.",
+      "price": 8.49,
+      "customizeOptions": {
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Chicken", "Salmon", "Tofu"]
+        },
+        "dressing": {
+          "multipleChoice": false,
+          "options": ["Poppy Seed", "Balsamic", "Honey Mustard"]
+        }
+      }
+    },
+    {
+      "id": 23,
+      "name": "Carbonara",
+      "category": "Pasta",
+      "description": "Spaghetti in a creamy sauce with pancetta, eggs, and parmesan.",
+      "price": 13.49,
+      "customizeOptions": {
+        "extraCheese": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addVegetables": {
+          "multipleChoice": true,
+          "options": ["Peas", "Mushrooms", "Spinach"]
+        }
+      }
+    },
+    {
+      "id": 24,
+      "name": "Veggie Burger",
+      "category": "Sandwich",
+      "description": "Grilled veggie patty with lettuce, tomato, and avocado on a whole wheat bun.",
+      "price": 9.99,
+      "customizeOptions": {
+        "breadType": {
+          "multipleChoice": false,
+          "options": ["Whole Wheat", "White", "Gluten-Free"]
+        },
+        "side": {
+          "multipleChoice": false,
+          "options": ["Fries", "Salad", "Sweet Potato Fries"]
+        }
+      }
+    },
+    {
+      "id": 25,
+      "name": "Brownie Sundae",
+      "category": "Dessert",
+      "description": "Warm brownie topped with vanilla ice cream, chocolate sauce, and whipped cream.",
+      "price": 6.99,
+      "customizeOptions": {
+        "iceCreamFlavor": {
+          "multipleChoice": false,
+          "options": ["Vanilla", "Chocolate", "Mint"]
+        },
+        "addToppings": {
+          "multipleChoice": true,
+          "options": ["Sprinkles", "Nuts", "Cherries"]
+        }
+      }
+    },
+    {
+      "id": 26,
+      "name": "Four Cheese Pizza",
+      "category": "Pizza",
+      "description": "Pizza topped with mozzarella, cheddar, parmesan, and gorgonzola cheese.",
+      "price": 12.49,
+      "customizeOptions": {
+        "size": {
+          "multipleChoice": false,
+          "options": ["Small", "Medium", "Large"]
+        },
+        "extraToppings": {
+          "multipleChoice": true,
+          "options": ["Basil", "Tomatoes", "Olives"]
+        }
+      }
+    },
+    {
+      "id": 27,
+      "name": "Taco Salad",
+      "category": "Salad",
+      "description": "Mixed greens with seasoned ground beef, cheese, tomatoes, and tortilla strips.",
+      "price": 9.49,
+      "customizeOptions": {
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Chicken", "Beef", "Beans"]
+        },
+        "dressing": {
+          "multipleChoice": false,
+          "options": ["Ranch", "Salsa", "Avocado Lime"]
+        }
+      }
+    },
+    {
+      "id": 28,
+      "name": "Seafood Linguine",
+      "category": "Pasta",
+      "description": "Linguine pasta with shrimp, scallops, and clams in a white wine sauce.",
+      "price": 15.99,
+      "customizeOptions": {
+        "extraSeafood": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addVegetables": {
+          "multipleChoice": true,
+          "options": ["Spinach", "Cherry Tomatoes", "Zucchini"]
+        }
+      }
+    },
+    {
+      "id": 29,
+      "name": "Reuben Sandwich",
+      "category": "Sandwich",
+      "description": "Corned beef, sauerkraut, Swiss cheese, and Russian dressing on rye bread.",
+      "price": 10.49,
+      "customizeOptions": {
+        "breadType": {
+          "multipleChoice": false,
+          "options": ["Rye", "Whole Wheat", "Sourdough"]
+        },
+        "side": {
+          "multipleChoice": false,
+          "options": ["Potato Salad", "Coleslaw", "Pickles"]
+        }
+      }
+    },
+    {
+      "id": 30,
+      "name": "Apple Pie",
+      "category": "Dessert",
+      "description": "Traditional apple pie with a flaky crust and cinnamon-spiced apples.",
+      "price": 5.99,
+      "customizeOptions": {
+        "serveWithIceCream": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "iceCreamFlavor": {
+          "multipleChoice": false,
+          "options": ["Vanilla", "Caramel", "Cinnamon"]
+        }
+      }
+    },
+    {
+      "id": 31,
+      "name": "Vegetarian Pizza",
+      "category": "Pizza",
+      "description": "Pizza topped with bell peppers, onions, mushrooms, olives, and mozzarella cheese.",
+      "price": 11.49,
+      "customizeOptions": {
+        "size": {
+          "multipleChoice": false,
+          "options": ["Small", "Medium", "Large"]
+        },
+        "extraToppings": {
+          "multipleChoice": true,
+          "options": ["Spinach", "Artichokes", "Tomatoes"]
+        }
+      }
+    },
+    {
+      "id": 32,
+      "name": "Waldorf Salad",
+      "category": "Salad",
+      "description": "Salad with apples, grapes, celery, and walnuts in a creamy dressing.",
+      "price": 8.99,
+      "customizeOptions": {
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Chicken", "Turkey"]
+        },
+        "dressing": {
+          "multipleChoice": false,
+          "options": ["Yogurt", "Mayonnaise", "Honey Mustard"]
+        }
+      }
+    },
+    {
+      "id": 33,
+      "name": "Ravioli",
+      "category": "Pasta",
+      "description": "Cheese-filled ravioli in a marinara sauce with basil and parmesan.",
+      "price": 12.49,
+      "customizeOptions": {
+        "sauceType": {
+          "multipleChoice": false,
+          "options": ["Marinara", "Alfredo", "Pesto"]
+        },
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Chicken", "Meatballs", "Sausage"]
+        }
+      }
+    },
+    {
+      "id": 34,
+      "name": "Turkey Avocado Sandwich",
+      "category": "Sandwich",
+      "description": "Sliced turkey with avocado, lettuce, tomato, and mayo on whole grain bread.",
+      "price": 9.99,
+      "customizeOptions": {
+        "breadType": {
+          "multipleChoice": false,
+          "options": ["Whole Grain", "White", "Gluten-Free"]
+        },
+        "side": {
+          "multipleChoice": false,
+          "options": ["Chips", "Salad", "Soup"]
+        }
+      }
+    },
+    {
+      "id": 35,
+      "name": "Molten Chocolate Cake",
+      "category": "Dessert",
+      "description": "Warm chocolate cake with a molten center, served with vanilla ice cream.",
+      "price": 7.99,
+      "customizeOptions": {
+        "iceCreamFlavor": {
+          "multipleChoice": false,
+          "options": ["Vanilla", "Chocolate", "Coffee"]
+        },
+        "addToppings": {
+          "multipleChoice": true,
+          "options": ["Whipped Cream", "Raspberries", "Mint Leaves"]
+        }
+      }
+    },
+    {
+      "id": 36,
+      "name": "Buffalo Chicken Pizza",
+      "category": "Pizza",
+      "description": "Pizza topped with buffalo chicken, mozzarella cheese, and blue cheese crumbles.",
+      "price": 12.99,
+      "customizeOptions": {
+        "size": {
+          "multipleChoice": false,
+          "options": ["Small", "Medium", "Large"]
+        },
+        "extraToppings": {
+          "multipleChoice": true,
+          "options": ["Onions", "Jalapenos", "Celery"]
+        }
+      }
+    },
+    {
+      "id": 37,
+      "name": "Quinoa Salad",
+      "category": "Salad",
+      "description": "Salad with quinoa, cherry tomatoes, cucumbers, and feta cheese.",
+      "price": 8.99,
+      "customizeOptions": {
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Chicken", "Tofu", "Shrimp"]
+        },
+        "dressing": {
+          "multipleChoice": false,
+          "options": ["Lemon Vinaigrette", "Balsamic", "Olive Oil"]
+        }
+      }
+    },
+    {
+      "id": 38,
+      "name": "Shrimp Scampi",
+      "category": "Pasta",
+      "description": "Linguine pasta with shrimp in a garlic butter sauce with white wine.",
+      "price": 14.99,
+      "customizeOptions": {
+        "extraShrimp": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addVegetables": {
+          "multipleChoice": true,
+          "options": ["Spinach", "Cherry Tomatoes", "Broccoli"]
+        }
+      }
+    },
+    {
+      "id": 39,
+      "name": "Pulled Pork Sandwich",
+      "category": "Sandwich",
+      "description": "Pulled pork with BBQ sauce on a toasted bun, served with coleslaw.",
+      "price": 9.99,
+      "customizeOptions": {
+        "bunType": {
+          "multipleChoice": false,
+          "options": ["Brioche", "Whole Wheat", "Gluten-Free"]
+        },
+        "side": {
+          "multipleChoice": false,
+          "options": ["Fries", "Salad", "Cornbread"]
+        }
+      }
+    },
+    {
+      "id": 40,
+      "name": "Lemon Tart",
+      "category": "Dessert",
+      "description": "Tangy lemon tart with a buttery crust, topped with powdered sugar.",
+      "price": 6.99,
+      "customizeOptions": {
+        "addMeringue": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addFruit": {
+          "multipleChoice": true,
+          "options": ["Raspberries", "Blueberries", "Mint"]
+        }
+      }
+    },
+    {
+      "id": 41,
+      "name": "Pepperoni and Sausage Pizza",
+      "category": "Pizza",
+      "description": "Pizza topped with pepperoni, sausage, and mozzarella cheese.",
+      "price": 11.99,
+      "customizeOptions": {
+        "size": {
+          "multipleChoice": false,
+          "options": ["Small", "Medium", "Large"]
+        },
+        "extraToppings": {
+          "multipleChoice": true,
+          "options": ["Extra Cheese", "Mushrooms", "Onions"]
+        }
+      }
+    },
+    {
+      "id": 42,
+      "name": "Chicken Caesar Wrap",
+      "category": "Salad",
+      "description": "Grilled chicken, romaine lettuce, and Caesar dressing wrapped in a tortilla.",
+      "price": 8.99,
+      "customizeOptions": {
+        "tortillaType": {
+          "multipleChoice": false,
+          "options": ["Whole Wheat", "Spinach", "Tomato Basil"]
+        },
+        "side": {
+          "multipleChoice": false,
+          "options": ["Chips", "Salad", "Fruit"]
+        }
+      }
+    },
+    {
+      "id": 43,
+      "name": "Eggplant Parmesan",
+      "category": "Pasta",
+      "description": "Breaded eggplant slices topped with marinara sauce and melted mozzarella.",
+      "price": 13.49,
+      "customizeOptions": {
+        "pastaType": {
+          "multipleChoice": false,
+          "options": ["Spaghetti", "Penne", "Fettuccine"]
+        },
+        "extraCheese": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 44,
+      "name": "Chicken Club Sandwich",
+      "category": "Sandwich",
+      "description": "Grilled chicken breast with bacon, lettuce, tomato, and mayo on toasted bread.",
+      "price": 9.99,
+      "customizeOptions": {
+        "breadType": {
+          "multipleChoice": false,
+          "options": ["Whole Wheat", "White", "Rye"]
+        },
+        "side": {
+          "multipleChoice": false,
+          "options": ["Chips", "Salad", "Soup"]
+        }
+      }
+    },
+    {
+      "id": 45,
+      "name": "Banana Split",
+      "category": "Dessert",
+      "description": "Banana split with vanilla, chocolate, and strawberry ice cream, topped with whipped cream, nuts, and cherries.",
+      "price": 7.49,
+      "customizeOptions": {
+        "iceCreamFlavor": {
+          "multipleChoice": false,
+          "options": ["Vanilla", "Chocolate", "Strawberry"]
+        },
+        "addToppings": {
+          "multipleChoice": true,
+          "options": ["Sprinkles", "Hot Fudge", "Caramel"]
+        }
+      }
+    },
+    {
+      "id": 46,
+      "name": "Margherita Pizza",
+      "category": "Pizza",
+      "description": "Classic pizza with fresh mozzarella, tomatoes, and basil.",
+      "price": 10.99,
+      "customizeOptions": {
+        "size": {
+          "multipleChoice": false,
+          "options": ["Small", "Medium", "Large"]
+        },
+        "extraToppings": {
+          "multipleChoice": true,
+          "options": ["Olives", "Mushrooms", "Extra Cheese"]
+        }
+      }
+    },
+    {
+      "id": 47,
+      "name": "Greek Salad",
+      "category": "Salad",
+      "description": "Salad with cucumbers, tomatoes, olives, feta cheese, and red onions.",
+      "price": 8.49,
+      "customizeOptions": {
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Chicken", "Lamb", "Falafel"]
+        },
+        "dressing": {
+          "multipleChoice": false,
+          "options": ["Greek Vinaigrette", "Tzatziki", "Olive Oil"]
+        }
+      }
+    },
+    {
+      "id": 48,
+      "name": "Spaghetti Bolognese",
+      "category": "Pasta",
+      "description": "Spaghetti pasta with a rich meat sauce, topped with parmesan cheese.",
+      "price": 11.99,
+      "customizeOptions": {
+        "extraSauce": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addVegetables": {
+          "multipleChoice": true,
+          "options": ["Mushrooms", "Spinach", "Bell Peppers"]
+        }
+      }
+    },
+    {
+      "id": 49,
+      "name": "Philly Cheesesteak",
+      "category": "Sandwich",
+      "description": "Thinly sliced steak with melted cheese, onions, and peppers on a hoagie roll.",
+      "price": 10.49,
+      "customizeOptions": {
+        "cheeseType": {
+          "multipleChoice": false,
+          "options": ["Provolone", "Cheddar", "American"]
+        },
+        "side": {
+          "multipleChoice": false,
+          "options": ["Fries", "Onion Rings", "Salad"]
+        }
+      }
+    },
+    {
+      "id": 50,
+      "name": "Cheesecake",
+      "category": "Dessert",
+      "description": "Creamy cheesecake with a graham cracker crust, served with a berry compote.",
+      "price": 6.49,
+      "customizeOptions": {
+        "addToppings": {
+          "multipleChoice": true,
+          "options": ["Strawberries", "Blueberries", "Whipped Cream"]
+        },
+        "extraCream": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 51,
+      "name": "BBQ Chicken Pizza",
+      "category": "Pizza",
+      "description": "Pizza topped with BBQ chicken, red onions, cilantro, and mozzarella cheese.",
+      "price": 11.99,
+      "customizeOptions": {
+        "size": {
+          "multipleChoice": false,
+          "options": ["Small", "Medium", "Large"]
+        },
+        "extraToppings": {
+          "multipleChoice": true,
+          "options": ["Pineapple", "Bacon", "Jalapenos"]
+        }
+      }
+    },
+    {
+      "id": 52,
+      "name": "Caprese Salad",
+      "category": "Salad",
+      "description": "Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze.",
+      "price": 7.99,
+      "customizeOptions": {
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Chicken", "Prosciutto"]
+        },
+        "extraBalsamic": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 53,
+      "name": "Fettuccine Alfredo",
+      "category": "Pasta",
+      "description": "Fettuccine pasta in a creamy Alfredo sauce with parmesan cheese.",
+      "price": 12.49,
+      "customizeOptions": {
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Chicken", "Shrimp", "Broccoli"]
+        },
+        "extraSauce": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 54,
+      "name": "Ham and Cheese Sandwich",
+      "category": "Sandwich",
+      "description": "Ham and cheese with lettuce and tomato on a toasted roll.",
+      "price": 8.49,
+      "customizeOptions": {
+        "breadType": {
+          "multipleChoice": false,
+          "options": ["Whole Wheat", "White", "Sourdough"]
+        },
+        "cheeseType": {
+          "multipleChoice": false,
+          "options": ["Swiss", "Cheddar", "Provolone"]
+        }
+      }
+    },
+    {
+      "id": 55,
+      "name": "Chocolate Mousse",
+      "category": "Dessert",
+      "description": "Rich and creamy chocolate mousse topped with whipped cream and chocolate shavings.",
+      "price": 5.99,
+      "customizeOptions": {
+        "addToppings": {
+          "multipleChoice": true,
+          "options": ["Raspberries", "Mint Leaves", "Chocolate Chips"]
+        },
+        "extraWhippedCream": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 56,
+      "name": "Mushroom Swiss Burger",
+      "category": "Burger",
+      "description": "Juicy beef patty topped with sautéed mushrooms and Swiss cheese.",
+      "price": 10.99,
+      "customizeOptions": {
+        "bunType": {
+          "multipleChoice": false,
+          "options": ["Brioche", "Whole Wheat", "Lettuce Wrap"]
+        },
+        "extraToppings": {
+          "multipleChoice": true,
+          "options": ["Bacon", "Grilled Onions", "Avocado"]
+        }
+      }
+    },
+    {
+      "id": 57,
+      "name": "Cobb Salad",
+      "category": "Salad",
+      "description": "Mixed greens with chicken, bacon, avocado, hard-boiled eggs, and blue cheese.",
+      "price": 9.99,
+      "customizeOptions": {
+        "dressing": {
+          "multipleChoice": false,
+          "options": ["Ranch", "Blue Cheese", "Vinaigrette"]
+        },
+        "extraToppings": {
+          "multipleChoice": true,
+          "options": ["Tomatoes", "Cucumbers", "Red Onions"]
+        }
+      }
+    },
+    {
+      "id": 58,
+      "name": "Lobster Ravioli",
+      "category": "Pasta",
+      "description": "Ravioli filled with lobster in a creamy tomato sauce.",
+      "price": 16.99,
+      "customizeOptions": {
+        "sauceType": {
+          "multipleChoice": false,
+          "options": ["Creamy Tomato", "Alfredo", "Pesto"]
+        },
+        "extraSeafood": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 59,
+      "name": "BLT Sandwich",
+      "category": "Sandwich",
+      "description": "Bacon, lettuce, and tomato with mayo on toasted bread.",
+      "price": 8.49,
+      "customizeOptions": {
+        "breadType": {
+          "multipleChoice": false,
+          "options": ["White", "Whole Wheat", "Rye"]
+        },
+        "addAvocado": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 60,
+      "name": "Tiramisu",
+      "category": "Dessert",
+      "description": "Classic Italian dessert with layers of mascarpone cheese and espresso-soaked ladyfingers.",
+      "price": 6.99,
+      "customizeOptions": {
+        "extraCocoa": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addFruit": {
+          "multipleChoice": true,
+          "options": ["Strawberries", "Blueberries", "Raspberries"]
+        }
+      }
+    },
+    {
+      "id": 61,
+      "name": "BBQ Pulled Pork Pizza",
+      "category": "Pizza",
+      "description": "Pizza topped with BBQ pulled pork, red onions, and mozzarella cheese.",
+      "price": 12.99,
+      "customizeOptions": {
+        "size": {
+          "multipleChoice": false,
+          "options": ["Small", "Medium", "Large"]
+        },
+        "extraToppings": {
+          "multipleChoice": true,
+          "options": ["Jalapenos", "Pineapple", "Cilantro"]
+        }
+      }
+    },
+    {
+      "id": 62,
+      "name": "Beet and Goat Cheese Salad",
+      "category": "Salad",
+      "description": "Roasted beets with goat cheese, arugula, and walnuts.",
+      "price": 8.99,
+      "customizeOptions": {
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Chicken", "Salmon"]
+        },
+        "dressing": {
+          "multipleChoice": false,
+          "options": ["Balsamic Vinaigrette", "Honey Mustard"]
+        }
+      }
+    },
+    {
+      "id": 63,
+      "name": "Penne Arrabbiata",
+      "category": "Pasta",
+      "description": "Penne pasta in a spicy tomato sauce with garlic and chili flakes.",
+      "price": 11.99,
+      "customizeOptions": {
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Chicken", "Sausage"]
+        },
+        "addVegetables": {
+          "multipleChoice": true,
+          "options": ["Bell Peppers", "Spinach"]
+        }
+      }
+    },
+    {
+      "id": 64,
+      "name": "Roast Beef Sandwich",
+      "category": "Sandwich",
+      "description": "Roast beef with horseradish sauce, lettuce, and tomato on a baguette.",
+      "price": 9.49,
+      "customizeOptions": {
+        "breadType": {
+          "multipleChoice": false,
+          "options": ["Baguette", "Whole Wheat", "Sourdough"]
+        },
+        "cheeseType": {
+          "multipleChoice": false,
+          "options": ["Cheddar", "Provolone", "Swiss"]
+        }
+      }
+    },
+    {
+      "id": 65,
+      "name": "Key Lime Pie",
+      "category": "Dessert",
+      "description": "Tart and tangy key lime pie with a graham cracker crust.",
+      "price": 5.99,
+      "customizeOptions": {
+        "addWhippedCream": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraLime": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 66,
+      "name": "Buffalo Wings",
+      "category": "Appetizer",
+      "description": "Spicy buffalo wings served with celery and blue cheese dressing.",
+      "price": 9.99,
+      "customizeOptions": {
+        "wingCount": {
+          "multipleChoice": false,
+          "options": ["6", "12", "18"]
+        },
+        "sauce": {
+          "multipleChoice": false,
+          "options": ["Mild", "Medium", "Hot"]
+        }
+      }
+    },
+    {
+      "id": 67,
+      "name": "Classic Cheeseburger",
+      "category": "Burger",
+      "description": "Beef patty with cheddar cheese, lettuce, tomato, and pickles.",
+      "price": 8.99,
+      "customizeOptions": {
+        "bunType": {
+          "multipleChoice": false,
+          "options": ["Brioche", "Whole Wheat", "Gluten-Free"]
+        },
+        "extraToppings": {
+          "multipleChoice": true,
+          "options": ["Bacon", "Avocado", "Grilled Onions"]
+        }
+      }
+    },
+    {
+      "id": 68,
+      "name": "Spinach Artichoke Dip",
+      "category": "Appetizer",
+      "description": "Creamy spinach artichoke dip served with tortilla chips.",
+      "price": 7.99,
+      "customizeOptions": {
+        "addCheese": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraChips": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 69,
+      "name": "Seafood Paella",
+      "category": "Main Course",
+      "description": "Traditional Spanish rice dish with shrimp, mussels, and calamari.",
+      "price": 18.99,
+      "customizeOptions": {
+        "extraSeafood": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addChorizo": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 70,
+      "name": "Grilled Chicken Caesar Salad",
+      "category": "Salad",
+      "description": "Romaine lettuce with grilled chicken, croutons, and Caesar dressing.",
+      "price": 10.99,
+      "customizeOptions": {
+        "dressing": {
+          "multipleChoice": false,
+          "options": ["Caesar", "Ranch", "Italian"]
+        },
+        "addExtras": {
+          "multipleChoice": true,
+          "options": ["Parmesan", "Bacon Bits", "Avocado"]
+        }
+      }
+    },
+    {
+      "id": 71,
+      "name": "Chicken Tacos",
+      "category": "Tacos",
+      "description": "Three soft tacos filled with grilled chicken, lettuce, and pico de gallo.",
+      "price": 9.99,
+      "customizeOptions": {
+        "tortillaType": {
+          "multipleChoice": false,
+          "options": ["Corn", "Flour"]
+        },
+        "addExtras": {
+          "multipleChoice": true,
+          "options": ["Cheese", "Sour Cream", "Guacamole"]
+        }
+      }
+    },
+    {
+      "id": 72,
+      "name": "Margarita",
+      "category": "Beverage",
+      "description": "Classic margarita with tequila, lime juice, and triple sec.",
+      "price": 7.99,
+      "customizeOptions": {
+        "rimSalt": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "flavor": {
+          "multipleChoice": false,
+          "options": ["Classic", "Strawberry", "Mango"]
+        }
+      }
+    },
+    {
+      "id": 73,
+      "name": "Chocolate Fondue",
+      "category": "Dessert",
+      "description": "Warm chocolate fondue served with strawberries, marshmallows, and bananas.",
+      "price": 9.99,
+      "customizeOptions": {
+        "addDippers": {
+          "multipleChoice": true,
+          "options": ["Pineapple", "Brownies", "Cookies"]
+        },
+        "extraChocolate": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 74,
+      "name": "Veggie Pizza",
+      "category": "Pizza",
+      "description": "Pizza topped with bell peppers, onions, mushrooms, and olives.",
+      "price": 11.99,
+      "customizeOptions": {
+        "size": {
+          "multipleChoice": false,
+          "options": ["Small", "Medium", "Large"]
+        },
+        "extraToppings": {
+          "multipleChoice": true,
+          "options": ["Extra Cheese", "Spinach", "Tomatoes"]
+        }
+      }
+    },
+    {
+      "id": 75,
+      "name": "Thai Green Curry",
+      "category": "Main Course",
+      "description": "Spicy green curry with chicken, bamboo shoots, and coconut milk.",
+      "price": 13.99,
+      "customizeOptions": {
+        "spiceLevel": {
+          "multipleChoice": false,
+          "options": ["Mild", "Medium", "Hot"]
+        },
+        "addExtras": {
+          "multipleChoice": true,
+          "options": ["Basil", "Broccoli", "Carrots"]
+        }
+      }
+    },
+    {
+      "id": 76,
+      "name": "Apple Pie",
+      "category": "Dessert",
+      "description": "Classic apple pie with a flaky crust, served with vanilla ice cream.",
+      "price": 5.99,
+      "customizeOptions": {
+        "extraIceCream": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addToppings": {
+          "multipleChoice": true,
+          "options": ["Caramel Sauce", "Whipped Cream"]
+        }
+      }
+    },
+    {
+      "id": 77,
+      "name": "Garlic Bread",
+      "category": "Appetizer",
+      "description": "Toasted bread with garlic butter and parsley.",
+      "price": 4.99,
+      "customizeOptions": {
+        "addCheese": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraGarlic": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 78,
+      "name": "Caesar Salad",
+      "category": "Salad",
+      "description": "Romaine lettuce with Caesar dressing, croutons, and parmesan cheese.",
+      "price": 7.99,
+      "customizeOptions": {
+        "addProtein": {
+          "multipleChoice": false,
+          "options": ["Chicken", "Shrimp", "Tofu"]
+        },
+        "extraDressing": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 79,
+      "name": "French Onion Soup",
+      "category": "Soup",
+      "description": "Rich onion soup topped with melted cheese and croutons.",
+      "price": 6.99,
+      "customizeOptions": {
+        "extraCheese": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addCroutons": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 80,
+      "name": "Chicken Alfredo",
+      "category": "Pasta",
+      "description": "Fettuccine pasta with grilled chicken in a creamy Alfredo sauce.",
+      "price": 12.99,
+      "customizeOptions": {
+        "extraSauce": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addVegetables": {
+          "multipleChoice": true,
+          "options": ["Broccoli", "Spinach", "Mushrooms"]
+        }
+      }
+    },
+    {
+      "id": 81,
+      "name": "Mediterranean Platter",
+      "category": "Appetizer",
+      "description": "Hummus, falafel, tabbouleh, and pita bread.",
+      "price": 10.99,
+      "customizeOptions": {
+        "addExtras": {
+          "multipleChoice": true,
+          "options": ["Olives", "Feta Cheese", "Roasted Red Peppers"]
+        },
+        "extraPita": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 83,
+      "name": "Shrimp Scampi",
+      "category": "Main Course",
+      "description": "Sautéed shrimp in a garlic butter sauce served over linguine.",
+      "price": 14.99,
+      "customizeOptions": {
+        "extraGarlic": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addWine": {
+          "multipleChoice": false,
+          "options": ["White Wine", "Red Wine"]
+        }
+      }
+    },
+    {
+      "id": 84,
+      "name": "Vegetarian Sushi Roll",
+      "category": "Sushi",
+      "description": "Assorted vegetables rolled in sushi rice and seaweed.",
+      "price": 10.49,
+      "customizeOptions": {
+        "addAvocado": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraGinger": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 85,
+      "name": "Pulled Jackfruit Sandwich",
+      "category": "Sandwich",
+      "description": "Jackfruit marinated in BBQ sauce, served on a bun with coleslaw.",
+      "price": 9.99,
+      "customizeOptions": {
+        "bunType": {
+          "multipleChoice": false,
+          "options": ["Whole Wheat", "Brioche", "Gluten-Free"]
+        },
+        "addPickles": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 86,
+      "name": "Tofu Stir-Fry",
+      "category": "Main Course",
+      "description": "Stir-fried tofu with mixed vegetables in a soy ginger sauce.",
+      "price": 12.99,
+      "customizeOptions": {
+        "spiceLevel": {
+          "multipleChoice": false,
+          "options": ["Mild", "Medium", "Spicy"]
+        },
+        "addCashews": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 87,
+      "name": "Mango Sticky Rice",
+      "category": "Dessert",
+      "description": "Sweet sticky rice topped with fresh mango slices and coconut milk.",
+      "price": 7.49,
+      "customizeOptions": {
+        "extraCoconutMilk": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addSesameSeeds": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 88,
+      "name": "Turkey Club Wrap",
+      "category": "Sandwich",
+      "description": "Turkey, bacon, lettuce, tomato, and mayo wrapped in a flour tortilla.",
+      "price": 8.99,
+      "customizeOptions": {
+        "addCheese": {
+          "multipleChoice": false,
+          "options": ["Swiss", "Cheddar", "Provolone"]
+        },
+        "addAvocado": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 89,
+      "name": "Quinoa Salad",
+      "category": "Salad",
+      "description": "Quinoa with mixed greens, cherry tomatoes, cucumbers, and lemon vinaigrette.",
+      "price": 9.49,
+      "customizeOptions": {
+        "addNuts": {
+          "multipleChoice": true,
+          "options": ["Almonds", "Walnuts", "Pecans"]
+        },
+        "addCheese": {
+          "multipleChoice": false,
+          "options": ["Feta", "Goat Cheese", "Parmesan"]
+        }
+      }
+    },
+    {
+      "id": 90,
+      "name": "Sesame Chicken",
+      "category": "Main Course",
+      "description": "Crispy sesame-coated chicken with a sweet and savory sauce.",
+      "price": 13.49,
+      "customizeOptions": {
+        "spiceLevel": {
+          "multipleChoice": false,
+          "options": ["Mild", "Medium", "Spicy"]
+        },
+        "addVegetables": {
+          "multipleChoice": true,
+          "options": ["Broccoli", "Bell Peppers", "Snow Peas"]
+        }
+      }
+    },
+    {
+      "id": 91,
+      "name": "Mushroom Risotto",
+      "category": "Main Course",
+      "description": "Creamy risotto with assorted mushrooms and parmesan cheese.",
+      "price": 15.99,
+      "customizeOptions": {
+        "extraCheese": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addTruffleOil": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 92,
+      "name": "Fruit Platter",
+      "category": "Appetizer",
+      "description": "Assorted fresh seasonal fruits served with yogurt dip.",
+      "price": 8.99,
+      "customizeOptions": {
+        "addHoney": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addGranola": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 93,
+      "name": "Caprese Salad",
+      "category": "Salad",
+      "description": "Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze.",
+      "price": 10.99,
+      "customizeOptions": {
+        "addProsciutto": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addOlives": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 94,
+      "name": "Lemon Pepper Salmon",
+      "category": "Main Course",
+      "description": "Grilled salmon fillet seasoned with lemon pepper, served with steamed vegetables.",
+      "price": 16.99,
+      "customizeOptions": {
+        "sideDish": {
+          "multipleChoice": false,
+          "options": ["Rice Pilaf", "Mashed Potatoes", "Quinoa"]
+        },
+        "addLemonWedge": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 95,
+      "name": "Stuffed Bell Peppers",
+      "category": "Main Course",
+      "description": "Bell peppers stuffed with seasoned ground beef and rice, topped with cheese.",
+      "price": 12.49,
+      "customizeOptions": {
+        "addSauce": {
+          "multipleChoice": false,
+          "options": ["Tomato Sauce", "Cheese Sauce"]
+        },
+        "addSpicyKick": {
+          "multipleChoice": false,
+          "options": ["Mild", "Spicy"]
+        }
+      }
+    },
+    {
+      "id": 96,
+      "name": "Vegetable Curry",
+      "category": "Main Course",
+      "description": "Mixed vegetables simmered in a coconut milk curry sauce.",
+      "price": 11.99,
+      "customizeOptions": {
+        "spiceLevel": {
+          "multipleChoice": false,
+          "options": ["Mild", "Medium", "Hot"]
+        },
+        "addTofu": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 97,
+      "name": "Chicken Quesadilla",
+      "category": "Appetizer",
+      "description": "Grilled chicken and melted cheese in a crispy flour tortilla, served with salsa and sour cream.",
+      "price": 8.99,
+      "customizeOptions": {
+        "addGuacamole": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraSalsa": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 98,
+      "name": "Pesto Pasta",
+      "category": "Pasta",
+      "description": "Penne pasta tossed in basil pesto sauce with cherry tomatoes and pine nuts.",
+      "price": 10.99,
+      "customizeOptions": {
+        "addGrilledChicken": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraParmesan": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 99,
+      "name": "Beef Tacos",
+      "category": "Tacos",
+      "description": "Three tacos filled with seasoned ground beef, lettuce, and salsa.",
+      "price": 9.49,
+      "customizeOptions": {
+        "tortillaType": {
+          "multipleChoice": false,
+          "options": ["Corn", "Flour"]
+        },
+        "addCheese": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 100,
+      "name": "Blueberry Pancakes",
+      "category": "Breakfast",
+      "description": "Fluffy pancakes filled with blueberries, served with maple syrup and whipped cream.",
+      "price": 7.99,
+      "customizeOptions": {
+        "addChocolateChips": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraWhippedCream": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 101,
+      "name": "Gourmet Burger",
+      "category": "Burger",
+      "description": "Angus beef patty with caramelized onions, goat cheese, and arugula on a brioche bun.",
+      "price": 13.99,
+      "customizeOptions": {
+        "extraBacon": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addTruffleFries": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 102,
+      "name": "Greek Salad",
+      "category": "Salad",
+      "description": "Crisp romaine lettuce with tomatoes, cucumbers, red onions, Kalamata olives, and feta cheese.",
+      "price": 9.99,
+      "customizeOptions": {
+        "addPepperoncini": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraOregano": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 103,
+      "name": "Vegetarian Chili",
+      "category": "Soup",
+      "description": "Hearty vegetarian chili with beans, tomatoes, bell peppers, and spices.",
+      "price": 8.49,
+      "customizeOptions": {
+        "toppingOptions": {
+          "multipleChoice": true,
+          "options": ["Shredded Cheese", "Sour Cream", "Green Onions"]
+        },
+        "addCornbread": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 104,
+      "name": "Fettuccine Carbonara",
+      "category": "Pasta",
+      "description": "Fettuccine pasta in a creamy egg and bacon sauce with parmesan cheese.",
+      "price": 12.99,
+      "customizeOptions": {
+        "addChicken": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraParmesan": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 105,
+      "name": "Mango Lassi",
+      "category": "Beverage",
+      "description": "Refreshing Indian drink made with mango pulp, yogurt, and a hint of cardamom.",
+      "price": 4.99,
+      "customizeOptions": {
+        "addRoseWater": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraMango": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 106,
+      "name": "Antipasto Platter",
+      "category": "Appetizer",
+      "description": "Assorted Italian meats, cheeses, olives, and roasted vegetables.",
+      "price": 11.99,
+      "customizeOptions": {
+        "addBreadsticks": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addBalsamicGlaze": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 107,
+      "name": "Pho",
+      "category": "Soup",
+      "description": "Vietnamese noodle soup with beef or chicken, bean sprouts, basil, and lime.",
+      "price": 10.99,
+      "customizeOptions": {
+        "proteinChoice": {
+          "multipleChoice": false,
+          "options": ["Beef", "Chicken"]
+        },
+        "spiceLevel": {
+          "multipleChoice": false,
+          "options": ["Mild", "Medium", "Spicy"]
+        }
+      }
+    },
+    {
+      "id": 108,
+      "name": "Pulled Pork Sliders",
+      "category": "Appetizer",
+      "description": "Mini pulled pork sandwiches with coleslaw on slider buns.",
+      "price": 9.49,
+      "customizeOptions": {
+        "addPickles": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraBBQSauce": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 109,
+      "name": "Ratatouille",
+      "category": "Main Course",
+      "description": "Classic French vegetable stew with tomatoes, eggplant, zucchini, and bell peppers.",
+      "price": 13.49,
+      "customizeOptions": {
+        "addCheese": {
+          "multipleChoice": false,
+          "options": ["Parmesan", "Goat Cheese"]
+        },
+        "addHerbs": {
+          "multipleChoice": false,
+          "options": ["Basil", "Thyme"]
+        }
+      }
+    },
+    {
+      "id": 110,
+      "name": "Chicken Shawarma Wrap",
+      "category": "Sandwich",
+      "description": "Grilled marinated chicken, garlic sauce, and pickles wrapped in pita bread.",
+      "price": 10.49,
+      "customizeOptions": {
+        "addHummus": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraGarlicSauce": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 111,
+      "name": "Key Lime Pie",
+      "category": "Dessert",
+      "description": "Tangy key lime pie with a graham cracker crust, topped with whipped cream.",
+      "price": 6.99,
+      "customizeOptions": {
+        "addLimeZest": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraWhippedCream": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 112,
+      "name": "Steak Frites",
+      "category": "Main Course",
+      "description": "Grilled sirloin steak served with French fries and garlic butter sauce.",
+      "price": 19.99,
+      "customizeOptions": {
+        "steakTemperature": {
+          "multipleChoice": false,
+          "options": [
+            "Rare",
+            "Medium Rare",
+            "Medium",
+            "Medium Well",
+            "Well Done"
+          ]
+        },
+        "addPeppercornSauce": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 113,
+      "name": "Fried Calamari",
+      "category": "Appetizer",
+      "description": "Crispy fried calamari rings served with marinara sauce.",
+      "price": 11.49,
+      "customizeOptions": {
+        "addLemonWedge": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraSpicyDip": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 114,
+      "name": "Vegetable Tempura",
+      "category": "Appetizer",
+      "description": "Assorted vegetables lightly battered and deep-fried, served with tempura sauce.",
+      "price": 9.99,
+      "customizeOptions": {
+        "addShrimpTempura": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraSoySauce": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 115,
+      "name": "Lamb Gyro",
+      "category": "Sandwich",
+      "description": "Grilled lamb slices, lettuce, tomato, onion, and tzatziki sauce in pita bread.",
+      "price": 12.99,
+      "customizeOptions": {
+        "addFetaCheese": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraTzatziki": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 116,
+      "name": "Chicken Parmesan",
+      "category": "Main Course",
+      "description": "Breaded chicken breast topped with marinara sauce and melted mozzarella, served with spaghetti.",
+      "price": 14.99,
+      "customizeOptions": {
+        "extraCheese": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "addMeatballs": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 117,
+      "name": "Crispy Tofu Bowl",
+      "category": "Main Course",
+      "description": "Crispy tofu cubes with steamed rice, broccoli, and teriyaki sauce.",
+      "price": 11.49,
+      "customizeOptions": {
+        "addEdamame": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraSesameSeeds": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 118,
+      "name": "Coconut Shrimp",
+      "category": "Appetizer",
+      "description": "Coconut-crusted shrimp served with sweet chili sauce.",
+      "price": 12.99,
+      "customizeOptions": {
+        "addPineappleSalsa": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraLimeWedge": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 119,
+      "name": "Vegetarian Burrito",
+      "category": "Burrito",
+      "description": "Rice, beans, cheese, guacamole, and salsa wrapped in a flour tortilla.",
+      "price": 10.99,
+      "customizeOptions": {
+        "addSourCream": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraJalapenos": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 120,
+      "name": "BBQ Ribs",
+      "category": "Main Course",
+      "description": "Slow-cooked BBQ ribs served with coleslaw and cornbread.",
+      "price": 17.99,
+      "customizeOptions": {
+        "addExtraBBQSauce": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraCornbread": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 121,
+      "name": "Sushi Combo",
+      "category": "Sushi",
+      "description": "Assorted sushi rolls and nigiri with soy sauce, wasabi, and pickled ginger.",
+      "price": 16.99,
+      "customizeOptions": {
+        "addSashimi": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraWasabi": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 122,
+      "name": "Pumpkin Soup",
+      "category": "Soup",
+      "description": "Creamy pumpkin soup garnished with croutons and a drizzle of pumpkin seed oil.",
+      "price": 8.49,
+      "customizeOptions": {
+        "addPumpkinSeeds": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraCream": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 123,
+      "name": "Beef Stir-Fry",
+      "category": "Main Course",
+      "description": "Sliced beef stir-fried with bell peppers, onions, and broccoli in a savory sauce.",
+      "price": 15.49,
+      "customizeOptions": {
+        "spiceLevel": {
+          "multipleChoice": false,
+          "options": ["Mild", "Medium", "Spicy"]
+        },
+        "addCashews": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 124,
+      "name": "Mediterranean Pizza",
+      "category": "Pizza",
+      "description": "Pizza topped with olives, feta cheese, tomatoes, and artichoke hearts.",
+      "price": 13.99,
+      "customizeOptions": {
+        "size": {
+          "multipleChoice": false,
+          "options": ["Small", "Medium", "Large"]
+        },
+        "extraSpinach": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 125,
+      "name": "Pasta Primavera",
+      "category": "Pasta",
+      "description": "Linguine pasta with seasonal vegetables in a light garlic and olive oil sauce.",
+      "price": 11.99,
+      "customizeOptions": {
+        "addGrilledShrimp": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraParmesan": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 126,
+      "name": "Chicken Caesar Wrap",
+      "category": "Sandwich",
+      "description": "Grilled chicken, romaine lettuce, parmesan cheese, and Caesar dressing in a flour tortilla.",
+      "price": 9.99,
+      "customizeOptions": {
+        "addBacon": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraDressing": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 127,
+      "name": "Hawaiian Poke Bowl",
+      "category": "Main Course",
+      "description": "Ahi tuna marinated in soy sauce and sesame oil, served over rice with avocado and seaweed salad.",
+      "price": 16.99,
+      "customizeOptions": {
+        "addCrabmeat": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraSeaweed": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 128,
+      "name": "Chocolate Mousse",
+      "category": "Dessert",
+      "description": "Silky chocolate mousse topped with whipped cream and chocolate shavings.",
+      "price": 7.99,
+      "customizeOptions": {
+        "addRaspberrySauce": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraChocolateShavings": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 129,
+      "name": "Falafel Plate",
+      "category": "Main Course",
+      "description": "Falafel balls served with hummus, tabbouleh, and pita bread.",
+      "price": 12.49,
+      "customizeOptions": {
+        "addBabaGhanoush": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraTahini": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 130,
+      "name": "Chili Cheese Fries",
+      "category": "Appetizer",
+      "description": "French fries topped with chili, melted cheese, and green onions.",
+      "price": 8.99,
+      "customizeOptions": {
+        "addJalapenos": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraSourCream": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 131,
+      "name": "Crab Cakes",
+      "category": "Appetizer",
+      "description": "Pan-seared crab cakes served with remoulade sauce.",
+      "price": 13.99,
+      "customizeOptions": {
+        "addColeslaw": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraLemonWedge": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 132,
+      "name": "Shakshuka",
+      "category": "Main Course",
+      "description": "Poached eggs in a spicy tomato sauce with peppers, onions, and spices.",
+      "price": 11.99,
+      "customizeOptions": {
+        "addFetaCheese": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraToast": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 133,
+      "name": "Mushroom Flatbread",
+      "category": "Appetizer",
+      "description": "Flatbread topped with sautéed mushrooms, caramelized onions, and goat cheese.",
+      "price": 10.49,
+      "customizeOptions": {
+        "addArugula": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraBalsamicReduction": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 134,
+      "name": "Tiramisu",
+      "category": "Dessert",
+      "description": "Classic Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese.",
+      "price": 8.49,
+      "customizeOptions": {
+        "addKahlua": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraCocoaPowder": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 135,
+      "name": "Cajun Shrimp Pasta",
+      "category": "Pasta",
+      "description": "Spicy Cajun-seasoned shrimp with linguine in a creamy Alfredo sauce.",
+      "price": 14.99,
+      "customizeOptions": {
+        "addAndouilleSausage": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraParmesan": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 136,
+      "name": "Beef Empanadas",
+      "category": "Appetizer",
+      "description": "Golden brown pastry filled with seasoned ground beef and vegetables, served with chimichurri sauce.",
+      "price": 9.99,
+      "customizeOptions": {
+        "addSalsaVerde": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraLimeWedge": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 137,
+      "name": "Butternut Squash Ravioli",
+      "category": "Pasta",
+      "description": "Ravioli filled with roasted butternut squash in a sage brown butter sauce.",
+      "price": 12.99,
+      "customizeOptions": {
+        "addToastedPineNuts": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraParmesan": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 138,
+      "name": "Churros",
+      "category": "Dessert",
+      "description": "Crispy fried dough pastry dusted with cinnamon sugar, served with chocolate dipping sauce.",
+      "price": 6.99,
+      "customizeOptions": {
+        "addVanillaIceCream": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraCaramelDrizzle": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 139,
+      "name": "Vegetable Spring Rolls",
+      "category": "Appetizer",
+      "description": "Crispy spring rolls filled with mixed vegetables, served with sweet chili sauce.",
+      "price": 8.49,
+      "customizeOptions": {
+        "addPeanutSauce": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraCilantro": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 140,
+      "name": "Chicken Tikka Masala",
+      "category": "Main Course",
+      "description": "Grilled chicken in a creamy tomato curry sauce, served with basmati rice.",
+      "price": 15.49,
+      "customizeOptions": {
+        "spiceLevel": {
+          "multipleChoice": false,
+          "options": ["Mild", "Medium", "Spicy"]
+        },
+        "addNaanBread": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 141,
+      "name": "Miso Soup",
+      "category": "Soup",
+      "description": "Traditional Japanese soup with tofu, seaweed, and green onions.",
+      "price": 5.99,
+      "customizeOptions": {
+        "addSoybeans": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraToastedSesameSeeds": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 142,
+      "name": "Pulled Chicken Sandwich",
+      "category": "Sandwich",
+      "description": "Slow-cooked pulled chicken in BBQ sauce, topped with coleslaw on a brioche bun.",
+      "price": 11.49,
+      "customizeOptions": {
+        "addPickles": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraBBQDrizzle": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 143,
+      "name": "Vegetarian Lasagna",
+      "category": "Main Course",
+      "description": "Layers of pasta with ricotta cheese, spinach, mushrooms, and marinara sauce.",
+      "price": 13.99,
+      "customizeOptions": {
+        "addEggplant": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraMozzarella": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 144,
+      "name": "Seafood Paella",
+      "category": "Main Course",
+      "description": "Traditional Spanish saffron rice dish with shrimp, mussels, clams, and chorizo.",
+      "price": 18.99,
+      "customizeOptions": {
+        "addLemonWedge": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraAioli": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 145,
+      "name": "Caprese Salad",
+      "category": "Salad",
+      "description": "Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze.",
+      "price": 9.99,
+      "customizeOptions": {
+        "addProsciutto": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraBalsamicGlaze": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 146,
+      "name": "Beef Tacos",
+      "category": "Tacos",
+      "description": "Grilled beef, lettuce, cheese, and salsa in soft corn tortillas.",
+      "price": 10.99,
+      "customizeOptions": {
+        "addGuacamole": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraLimeWedge": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 147,
+      "name": "Chicken Caesar Salad",
+      "category": "Salad",
+      "description": "Grilled chicken breast, romaine lettuce, croutons, and Parmesan cheese with Caesar dressing.",
+      "price": 12.49,
+      "customizeOptions": {
+        "addAnchovies": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraCroutons": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 148,
+      "name": "Beef Pho",
+      "category": "Soup",
+      "description": "Vietnamese noodle soup with thinly sliced beef, herbs, and rice noodles in a fragrant broth.",
+      "price": 11.99,
+      "customizeOptions": {
+        "addBeanSprouts": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraThaiBasil": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 149,
+      "name": "Spinach and Ricotta Stuffed Shells",
+      "category": "Pasta",
+      "description": "Jumbo pasta shells filled with spinach, ricotta, and topped with marinara sauce and melted mozzarella.",
+      "price": 13.49,
+      "customizeOptions": {
+        "addParmesan": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraBasil": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    },
+    {
+      "id": 150,
+      "name": "Gourmet Burger",
+      "category": "Burger",
+      "description": "Beef patty with lettuce, tomato, onion, and choice of cheese on a brioche bun.",
+      "price": 14.99,
+      "customizeOptions": {
+        "addBaconJam": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        },
+        "extraAvocado": {
+          "multipleChoice": false,
+          "options": ["Yes", "No"]
+        }
+      }
+    }
+  ]
+}
