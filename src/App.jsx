@@ -10,7 +10,7 @@ function App() {
   return (
     <div className=" mt-4 mx-8">
       <Navbar />
-      <Categories setSelectedCategory={setSelectedCategory} />
+      <Categories selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       <div className="flex justify-between p-4 ">
         <Menu selectedCategory={selectedCategory} />
         <Cart />

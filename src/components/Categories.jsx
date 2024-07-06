@@ -7,7 +7,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import data from "../../mockdata/data.json";
 
-const Categories = ({ setSelectedCategory }) => {
+const Categories = ({ selectedCategory, setSelectedCategory }) => {
   const ref = useRef();
   const { events } = useDraggable(ref);
   const categoryList = useSelector(selectCategory);
@@ -22,20 +22,40 @@ const Categories = ({ setSelectedCategory }) => {
     dispatch(addToCategory(getUniqueCategories(data)));
   }, [dispatch]);
 
+  const sortedCategoryList = [...categoryList];
+  const selectedIndex = sortedCategoryList.findIndex(
+    (item) => item === selectedCategory
+  );
+  if (selectedIndex !== -1) {
+    const selectedCategoryItem = sortedCategoryList.splice(selectedIndex, 1);
+    sortedCategoryList.unshift(selectedCategoryItem[0]);
+  }
+
   return (
-    <div className="sticky top-12 border-[2px] rounded-full bg-white px-4 my-1">
+    <div className="sticky top-12  bg-white pe-4 my-1">
       <div
-        className="flex scroll-bar gap-28 overflow-x-scroll p-1"
+        className="flex gap-28 overflow-x-scroll p-1 !cursor-grabbing"
         {...events}
         ref={ref}
       >
-        {categoryList?.map((item, index) => (
+        {sortedCategoryList.map((item, index) => (
           <button
-            className="text-nowrap cursor-pointer"
-            onClick={() => setSelectedCategory(item)}
+            className={`text-nowrap !cursor-pointer ${
+              selectedCategory === item
+                ? "sticky left-0 bg-white border-[1px] border-black ps-2 pe-1 py-1 rounded-full"
+                : ""
+            }`}
             key={index}
           >
-            {item}
+            <span onClick={() => setSelectedCategory(item)}> {item}</span>
+            {selectedCategory !== "All Items" && selectedCategory === item && (
+              <span
+                className="m-1 px-1 border-[1px] border-transparent hover:border-black hover:border-[1px] rounded-full"
+                onClick={() => setSelectedCategory("All Items")}
+              >
+                X
+              </span>
+            )}
           </button>
         ))}
       </div>
