@@ -3,14 +3,16 @@ import Menu from "./components/Menu";
 import Cart from "./components/Cart";
 import Navbar from "./components/Navbar";
 import Categories from "./components/Categories";
+import { useState } from "react";
 
 function App() {
+  const [selectedCategory, setSelectedCategory] = useState("All Items");
   return (
     <div className=" mt-4 mx-8">
       <Navbar />
-      <Categories />
-      <div className="flex p-4 ">
-        <Menu />
+      <Categories setSelectedCategory={setSelectedCategory} />
+      <div className="flex justify-between p-4 ">
+        <Menu selectedCategory={selectedCategory} />
         <Cart />
       </div>
     </div>

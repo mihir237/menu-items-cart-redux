@@ -7,7 +7,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import data from "../../mockdata/data.json";
 
-const Categories = () => {
+const Categories = ({ setSelectedCategory }) => {
   const ref = useRef();
   const { events } = useDraggable(ref);
   const categoryList = useSelector(selectCategory);
@@ -30,7 +30,13 @@ const Categories = () => {
         ref={ref}
       >
         {categoryList?.map((item, index) => (
-          <button className="text-nowrap cursor-pointer" key={index}>{item}</button>
+          <button
+            className="text-nowrap cursor-pointer"
+            onClick={() => setSelectedCategory(item)}
+            key={index}
+          >
+            {item}
+          </button>
         ))}
       </div>
     </div>

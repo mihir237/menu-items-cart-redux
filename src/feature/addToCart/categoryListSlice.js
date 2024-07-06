@@ -7,7 +7,7 @@ export const categoryListSlice = createSlice({
     },
     reducers: {
         addToCategory: (state, action) => {
-            state.category = [...action.payload]
+            state.category = ["All Items",...action.payload]
         }
     }
 })
