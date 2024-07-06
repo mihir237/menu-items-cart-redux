@@ -3,8 +3,8 @@ import CartItem from "./CartItem";
 
 const Cart = () => {
   return (
-    <div className="ms-6 border-s-[1px] border-gray-600 ps-4">
-      <h1 className="text-3xl font-bold">Cart </h1>
+    <div className="ms-6 border-s-[1px] border-gray-600 ps-4 ">
+      <h1 className="flex justify-center text-3xl font-bold">Cart </h1>
       <div>
         <CartItem />
         <CartItem />
