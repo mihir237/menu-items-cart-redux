@@ -42,7 +42,7 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => {
           <button
             className={`text-nowrap !cursor-pointer ${
               selectedCategory === item
-                ? "sticky left-0 bg-white border-[1px] border-black ps-2 pe-1 py-1 rounded-full"
+                ? "sticky left-0 bg-white border-[1px] border-black ps-2 pe-1 rounded-full"
                 : ""
             }`}
             key={index}
@@ -50,7 +50,7 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => {
             <span onClick={() => setSelectedCategory(item)}> {item}</span>
             {selectedCategory !== "All Items" && selectedCategory === item && (
               <span
-                className="m-1 px-1 border-[1px] border-transparent hover:border-black hover:border-[1px] rounded-full"
+                className="m-1 text-xs px-1 border-[1px] border-transparent hover:border-black hover:border-[1px] rounded-full"
                 onClick={() => setSelectedCategory("All Items")}
               >
                 X
