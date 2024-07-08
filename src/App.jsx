@@ -8,10 +8,13 @@ import { useState } from "react";
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("All Items");
   return (
-    <div className=" mt-4 mx-8">
+    <div className=" mt-4 mx-2 md:mx-8">
       <Navbar />
-      <Categories selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
-      <div className="flex justify-between p-4 ">
+      <Categories
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+      />
+      <div className="flex">
         <Menu selectedCategory={selectedCategory} />
         <Cart />
       </div>

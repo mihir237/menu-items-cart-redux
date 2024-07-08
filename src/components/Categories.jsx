@@ -3,7 +3,7 @@ import { useDraggable } from "react-use-draggable-scroll";
 import {
   addToCategory,
   selectCategory,
-} from "../feature/addToCart/categoryListSlice";
+} from "../feature/categoryListSlice";
 import { useDispatch, useSelector } from "react-redux";
 import data from "../../mockdata/data.json";
 
@@ -34,7 +34,7 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => {
   return (
     <div className="sticky top-12  bg-white pe-4 my-1">
       <div
-        className="flex gap-28 overflow-x-scroll p-1 !cursor-grabbing"
+        className="flex justify-evenly gap-5 overflow-x-scroll p-1 !cursor-grabbing"
         {...events}
         ref={ref}
       >
