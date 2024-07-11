@@ -4,7 +4,7 @@ import MenuItem from "./MenuItem";
 import {
   selectItemId,
   selectModalVisibility,
-  setModalState
+  setModalState,
 } from "../feature/menuItemModalSlice"; // Import setModalState action
 import { useDispatch, useSelector } from "react-redux";
 
@@ -16,11 +16,12 @@ const Menu = ({ selectedCategory }) => {
   console.log("------>", modalVisibility1);
   return (
     <div>
-      <h1 className="flex justify-center text-3xl font-bold text-left ms-4" onClick={() =>
-                dispatch(
-                  setModalState({ modalVisibility: true, itemId: 1 })
-                )
-              }>
+      <h1
+        className="flex justify-center text-3xl font-bold text-left ms-4"
+        onClick={() =>
+          dispatch(setModalState({ modalVisibility: true, itemId: 1 }))
+        }
+      >
         Menu
       </h1>
       <h2 className="flex justify-center text-xl font-bold text-left ms-4">
@@ -29,7 +30,8 @@ const Menu = ({ selectedCategory }) => {
 
       <div className="flex flex-1 justify-center flex-wrap">
         {data.menuItems.map((item) =>
-          selectedCategory === "All Items" || selectedCategory === item.category ? (
+          selectedCategory === "All Items" ||
+          selectedCategory === item.category ? (
             <MenuItem
               key={item.id}
               item={item}

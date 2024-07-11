@@ -1,8 +1,8 @@
 import React from "react";
 
-const MenuItem = ({ item }) => {
+const MenuItem = ({ item, onClick }) => {
   return (
-    <div>
+    <div onClick={onClick}>
       <div className="border-[1px] border-gray-600 rounded-lg m-4 p-4 w-[20rem]">
         <div className="flex justify-between items-baseline">
           <h2 className="text-base text-left font-semibold ">{item.name}</h2>

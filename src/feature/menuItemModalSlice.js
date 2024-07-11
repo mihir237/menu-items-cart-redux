@@ -18,7 +18,7 @@ export const menuItemModalSlice = createSlice({
 
 export const { setModalState } = menuItemModalSlice.actions
 
-export const selectModalVisibility = (state) => state.modal?.modalVisibility
-export const selectItemId = (state) => state.modal?.itemId
+export const selectModalVisibility = (state) => state.menuItemModal.modalVisibility;
+export const selectItemId = (state) => state.menuItemModal.itemId;
 
 export default menuItemModalSlice.reducer
