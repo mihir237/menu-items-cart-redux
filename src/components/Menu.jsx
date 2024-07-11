@@ -5,7 +5,7 @@ import {
   selectItemId,
   selectModalVisibility,
   setModalState,
-} from "../feature/menuItemModalSlice"; // Import setModalState action
+} from "../feature/menuItemModalSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const Menu = ({ selectedCategory }) => {
@@ -13,7 +13,12 @@ const Menu = ({ selectedCategory }) => {
   const modalVisibility1 = useSelector(selectModalVisibility);
   const dispatch = useDispatch();
 
-  console.log("------>", modalVisibility1);
+  const findMenuItemDetailsForModal = () => {
+    return data.menuItems.find((item) => item.id === itemId1);
+  };
+
+  const selectedItem = itemId1 ? findMenuItemDetailsForModal() : null;
+
   return (
     <div>
       <h1
@@ -53,33 +58,20 @@ const Menu = ({ selectedCategory }) => {
         }
       >
         <div
-          className="relative z-30 w-[90%] md:w-[60%] h-[80%] md:h-[70%] bg-white rounded-lg shadow-2xl"
+          className="flex flex-col z-30 w-[90%] md:w-[60%] h-[80%] md:h-[70%] rounded-lg shadow-2xl"
           onClick={(e) => e.stopPropagation()}
         >
           <button
-            className="absolute top-3 right-3 text-xs border-2 px-2 py-1 rounded-full border-gray-500 text-gray-500 font-extrabold"
+            className="flex justify-end pe-2 text-white text-sm font-extrabold"
             onClick={() =>
               dispatch(setModalState({ modalVisibility: false, itemId: null }))
             }
           >
             X
           </button>
-          <div className="">
-            <h2 className="text-base text-left font-semibold ">test</h2>
-            <h3 className="font-bold text-2xl">test$</h3>
-
-            <p className="text-left text-xs font-semibold text-gray-600">
-              test
-            </p>
-            <h3 className="text-left mt-4 text-sm font-medium underline decoration-gray-300 underline-offset-4">
-              Customize
-            </h3>
-            <div className="">
-              <button className="border-[1px] rounded-full px-6 mt-2 border-gray-600 ">
-                Add to Cart
-              </button>
-            </div>
-          </div>
+          {selectedItem && (
+            <MenuItem item={selectedItem} modal={true} onClick={() => {}} />
+          )}
         </div>
       </div>
     </div>
