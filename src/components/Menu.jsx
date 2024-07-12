@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import data from "../../mockdata/data.json";
 import MenuItem from "./MenuItem";
 import {
@@ -19,8 +19,20 @@ const Menu = ({ selectedCategory }) => {
 
   const selectedItem = itemId1 ? findMenuItemDetailsForModal() : null;
 
+  useEffect(() => {
+    if (modalVisibility1) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [modalVisibility1]);
+
   return (
-    <div>
+    <div className="">
       <h1
         className="flex justify-center text-3xl font-bold text-left ms-4"
         onClick={() =>
@@ -52,17 +64,17 @@ const Menu = ({ selectedCategory }) => {
       <div
         className={`${
           modalVisibility1 ? "flex" : "hidden"
-        } fixed top-0 left-0 w-[100vw] h-screen border-[1px] bg-gray-500/[0.6] overflow-hidden justify-center items-center`}
+        } fixed top-0 left-0 w-full h-screen bg-gray-500 bg-opacity-60 overflow-hidden justify-center items-center`}
         onClick={() =>
           dispatch(setModalState({ modalVisibility: false, itemId: null }))
         }
       >
         <div
-          className="flex flex-col z-30 w-[90%] md:w-[60%] h-[80%] md:h-[70%] rounded-lg shadow-2xl"
+          className="flex flex-col z-30 w-[90%] md:w-[60%] h-[80%] md:h-[70%] rounded-lg shadow-2xl mb-12 md:mb-0"
           onClick={(e) => e.stopPropagation()}
         >
           <button
-            className="flex justify-end pe-2 text-white text-sm font-extrabold"
+            className="self-end p-2 text-white text-sm font-extrabold"
             onClick={() =>
               dispatch(setModalState({ modalVisibility: false, itemId: null }))
             }
