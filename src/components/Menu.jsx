@@ -74,7 +74,7 @@ const Menu = ({ selectedCategory }) => {
           onClick={(e) => e.stopPropagation()}
         >
           <button
-            className="self-end p-2 text-white text-sm font-extrabold"
+            className="self-end me-1 px-2 rounded-full border-[1px] text-white text-sm font-extrabold"
             onClick={() =>
               dispatch(setModalState({ modalVisibility: false, itemId: null }))
             }
