@@ -32,7 +32,7 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => {
   }
 
   return (
-    <div className="sticky top-12  bg-white pe-4 my-1">
+    <div className="sticky top-12  bg-white pe-4 my-1 z-30">
       <div
         className="flex justify-evenly gap-5 overflow-x-scroll p-1 !cursor-grabbing"
         {...events}
