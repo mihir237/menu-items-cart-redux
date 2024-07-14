@@ -63,14 +63,14 @@ const Menu = ({ selectedCategory }) => {
       </div>
       <div
         className={`${
-          modalVisibility1 ? "flex" : "hidden"
+          modalVisibility1 ? "flex z-30" : "hidden"
         } fixed top-0 left-0 w-full h-screen bg-gray-500 bg-opacity-60 overflow-hidden justify-center items-center`}
         onClick={() =>
           dispatch(setModalState({ modalVisibility: false, itemId: null }))
         }
       >
         <div
-          className="flex flex-col z-30 w-[90%] md:w-[60%] h-[80%] md:h-[70%] rounded-lg shadow-2xl mb-12 md:mb-0"
+          className="flex flex-col z-50 w-[90%] md:w-[60%] h-[80%] md:h-[70%] rounded-lg shadow-2xl mb-12 md:mb-0"
           onClick={(e) => e.stopPropagation()}
         >
           <button
