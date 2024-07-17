@@ -1,14 +1,21 @@
 // src/Cart.js
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router-dom";
 import CartItem from "./CartItem";
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items);
   const totalAmount = useSelector((state) => state.cart.totalAmount);
+  const { pathname } = useLocation();
+  console.log(pathname);
 
   return (
-    <div className="mx-6 border-s-[1px] border-gray-600 ps-4 hidden md:block md:w-[25rem]">
+    <div
+      className={`mx-6 border-s-[1px] border-gray-600 ps-4  md:w-[25rem] ${
+        pathname !== "/" ? "block" : "hidden md:block"
+      }`}
+    >
       <h1 className="flex justify-center text-3xl font-bold">Cart</h1>
       <div>
         {cartItems.length > 0 ? (
