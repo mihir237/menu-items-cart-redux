@@ -21,11 +21,16 @@ import "./index.css";
 import store from "./app/store.js";
 import { Provider } from "react-redux";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Cart from "./components/Cart.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/cart",
+    element: <Cart />,
   },
 ]);
 
