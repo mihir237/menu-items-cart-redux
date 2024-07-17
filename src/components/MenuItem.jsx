@@ -1,8 +1,17 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import CustomizeOptions from "./CustomizeOptions";
 import MenuItemDetails from "./MenuItemDetails";
+import { addItemToCart } from "../feature/addToCart/addToCartSlice";
 
 const MenuItem = ({ item, onClick, modal }) => {
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (e) => {
+    e.stopPropagation();
+    dispatch(addItemToCart(item));
+  };
+
   return (
     <div
       className={`relative border-[1px] border-gray-600 rounded-lg ${
@@ -13,7 +22,6 @@ const MenuItem = ({ item, onClick, modal }) => {
       <MenuItemDetails item={item} modal={modal} />
       <div className="flex flex-col mt-2">
         {modal && <CustomizeOptions options={item.customizeOptions} />}
-        {/* <div className="flex justify-between items-baseline  bottom-0 left-0 right-0 absolute bg-white border-t border-gray-300"> */}
         <div
           className={`flex justify-between items-baseline  bottom-0 left-0 right-0  bg-white border-t border-gray-300 ${
             modal ? "absolute px-4 pt-2 mb-4" : ""
@@ -26,7 +34,10 @@ const MenuItem = ({ item, onClick, modal }) => {
               Customize
             </h3>
           )}
-          <button className="border-[1px] rounded-full px-6 mt-2 border-gray-600">
+          <button
+            className="border-[1px] rounded-full px-6 mt-2 border-gray-600"
+            onClick={handleAddToCart}
+          >
             Add to Cart
           </button>
         </div>
